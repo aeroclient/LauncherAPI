@@ -1,0 +1,23 @@
+.blogauthor::after {
+    content: "Posted by ArcaneCiCi";
+  }
+
+.blogtitle::after {
+    content: "Huge Updates";
+}
+
+.blogcontent::after {
+    font-weight: bold;
+    content: "Welcome to Aero Client 2.2.0! We apologize for the issues caused on the previous launcher, but we will prove to do better in the future. In spite of this, lets get into what you should expect to see in the next few days! Aero Client will see some very huge changes soon such as public testing for our custom 1.7.10 and 1.8.9 client! There will be huge changes in these client updates.";
+}
+
+.versiontext::after {
+    content: "Powered by CiCi Games LLC • 2.2.0-Beta"
+}
+
+
+/* Information Tab */
+
+.aboutus::after {
+    content: "Aero Client is a reskinned version of CheatBreaker and Lunar Client 1.8.9, that had more than just images and text changed, we offer cosmetics, a launcher for our users to use, and an anticheat!";
+}
