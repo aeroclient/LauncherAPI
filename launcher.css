@@ -1,18 +1,22 @@
 .blogauthor::after {
-    content: "Posted by ArcaneCiCi";
+    content: "Posted by ArcaneCC";
   }
 
+.blog-author-skin {
+  background-image: url('https://minotar.net/helm/58025126-17c2-4fe3-bbc9-81519341f7d6/32.png');
+}
+
 .blogtitle::after {
-    content: "Huge Updates";
+    content: "The Release";
 }
 
 .blogcontent::after {
     font-weight: bold;
-    content: "Welcome to Aero Client 2.2.0! We apologize for the issues caused on the previous launcher, but we will prove to do better in the future. In spite of this, lets get into what you should expect to see in the next few days! Aero Client will see some very huge changes soon such as public testing for our custom 1.7.10 and 1.8.9 client! There will be huge changes in these client updates.";
+    content: "Welcome to the full release of Aero Client! The days of public beta testing and making sure the client is fully working and done is now over! We have also added in a new option for launching called the Branch option, this will allow you to use Beta versions of the client, which will soon be the custom client. This project has been in the works for months and is now finally complete, in the coming days we will be updating the beta versions of Aero Client with new mods, and new features that have never been seen on Aero Client before! Thank you to everyone who made this possible, we thank you for your continued support. We will be doing multiple giveaways for cosmetics soon, so be on the look out for that! Be on the look out for our custom client beta releases too 👀!";
 }
 
 .versiontext::after {
-    content: "Powered by CiCi Games LLC • 2.2.0-Beta"
+    content: "Powered by CiCi Games LLC • 2.2.0-Beta [LauncherAPI-Dev]"
 }
 
 
