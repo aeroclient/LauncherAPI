@@ -7,21 +7,21 @@
 }
 
 .blogtitle::after {
-    content: "The Release";
+    content: "Phase Two";
 }
 
 .blogcontent::after {
     font-weight: bold;
-    content: "Welcome to the full release of Aero Client! The days of public beta testing and making sure the client is fully working and done is now over! We have also added in a new option for launching called the Branch option, this will allow you to use Beta versions of the client, which will soon be the custom client. This project has been in the works for months and is now finally complete, in the coming days we will be updating the beta versions of Aero Client with new mods, and new features that have never been seen on Aero Client before! Thank you to everyone who made this possible, we thank you for your continued support. We will be doing multiple giveaways for cosmetics soon, so be on the look out for that! Be on the look out for our custom client beta releases too 👀!";
+    content: "It is now time to begin being public about Phase Two of Aero Client. Phase Two is our next step into the full release, and will consist of us redesigning the entire client instead of just colors and animations changed, we will start pushing these updates out to our Beta Branch in the coming days, to test and ensure that everything is in working order. Thank you for the continued support, we have huge plans for Aero Client, us adding mods was just the beginning. 👀";
 }
 
 .versiontext::after {
-    content: "Powered by CiCi Games LLC • 2.2.0-Beta [LauncherAPI-1.0]"
+    content: "Powered by CiCi Games LLC • 2.2.1 [LauncherAPI-1.1]"
 }
 
 
 /* Information Tab */
 
 .aboutus::after {
-    content: "Aero Client is a reskinned version of CheatBreaker and Lunar Client 1.8.9, that has more than just images and text changed, we offer cosmetics, a launcher for our users to use, and an anticheat!";
+    content: "Aero Client is a reskinned version of CheatBreaker, with more mods and features added, cosmetics, a launcher for our users to use, and an anticheat!";
 }
