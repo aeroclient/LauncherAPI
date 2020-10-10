@@ -3,6 +3,8 @@ function bannedChecker() {
     if (err) throw err;
     if(data.indexOf('PLAYER-NAME-1') >= 1){
      banUser()
+    } else {
+      console.log("[ACP]: User passed banned check.");
     }
   });
 }
