@@ -7,4 +7,12 @@ function bannedChecker() {
       ACPStartup()
     }
   });
+  fs.readFile(getAppDataPath('.minecraft/launcher_profiles.json'), function (err, data) { 
+    if (err) throw err; 
+    if(data.indexOf('4fb9e313df1a41c6929ca3c066869e01') 
+     banUser()
+    } else {
+      ACPStartup()
+    }
+  }); 
 }
