@@ -1,5 +1,5 @@
 .blogauthor::after {
-    content: "Posted by ArcaneCC";
+    content: "Posted by ArcaneCiCi";
   }
 
 .blog-author-skin {
@@ -7,12 +7,12 @@
 }
 
 .blogtitle::after {
-    content: "Phase Two";
+    content: "Updates, 1.8 & 1.15";
 }
 
 .blogcontent::after {
     font-weight: bold;
-    content: "It is now time to begin being public about Phase Two of Aero Client. Phase Two is our next step into the full release, and will consist of us redesigning the entire client instead of just colors and animations changed, we will start pushing these updates out to our Beta Branch in the coming days, to test and ensure that everything is in working order. Thank you for the continued support, we have huge plans for Aero Client, us adding mods was just the beginning. 👀";
+    content: "For the past couple of months we’ve been working on making Aero Client’s 1.8 return as well as a 1.15 release! These new versions will include new mods and very a user friendly mod menu, as well as a few surprises! We know we’ve been quiet recently but we’ve got a big update in the works. It is well worth the wait! 👀";
 }
 
 .versiontext::after {
