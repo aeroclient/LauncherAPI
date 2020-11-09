@@ -7,12 +7,12 @@
 }
 
 .blogtitle::after {
-    content: "Updates, 1.8 & 1.15";
+    content: "Updates, 1.8 & 1.16";
 }
 
 .blogcontent::after {
     font-weight: bold;
-    content: "For the past couple of months we’ve been working on making Aero Client’s 1.8 return as well as a 1.15 release! These new versions will include new mods and very a user friendly mod menu, as well as a few surprises! We know we’ve been quiet recently but we’ve got a big update in the works. It is well worth the wait! 👀";
+    content: "For the past couple of months we’ve been working on making Aero Client’s 1.8 return as well as a now 1.16 release! We were going to 1.15, however we feel 1.16 will benefit our users more! These new versions will include new mods and very a user friendly mod menu, as well as a few surprises! We know we’ve been quiet recently but we’ve got a big update in the works. It is well worth the wait! Stay tuned! 👀";
 }
 
 .versiontext::after {
