@@ -7,12 +7,12 @@
 }
 
 .blogtitle::after {
-    content: "Updates, 1.8 & 1.16";
+    content: "The Winter Update";
 }
 
 .blogcontent::after {
     font-weight: bold;
-    content: "For the past couple of months we’ve been working on making Aero Client’s 1.8 return as well as a now 1.16 release! We were going to 1.15, however we feel 1.16 will benefit our users more! These new versions will include new mods and very a user friendly mod menu, as well as a few surprises! We know we’ve been quiet recently but we’ve got a big update in the works. It is well worth the wait! Stay tuned! 👀";
+    content: "Today we are proud to announce that we are doing our very first Winter Update! This update will last all winter and will come in phases, Phase 1 will consist of updating 1.7, and the new launcher. Phase 2 will consist of our 1.8 public beta/release, and Phase 3 will consist of our 1.16 public beta/release. We have a lot more features and mods coming to Aero Client, as well as a brand new look! We hope to start this update at the very latest January, however it may come as early as Christmas Eve or Day. Stay Tuned. 👀❄️";
 }
 
 .versiontext::after {
