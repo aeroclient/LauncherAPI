@@ -8,3 +8,8 @@ function startupChecks() {
   bannedCheck()
 }
 
+function notWhitelisted() {
+  document.querySelector('.launch-button').className += " banned";
+  document.getElementById('launchButton').innerHTML = "UNAUTHORIZED";
+  console.log("[ACP]: Not whitelisted!");
+}
