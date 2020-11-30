@@ -6,7 +6,7 @@ function bannedChecker() {
     } else if(data.indexOf('4fb9e313df1a41c6929ca3c066869e01') >= 1) {
      banUser()
     } else {
-      ACPStartup()
+      launchClient()
     }
   });
 }
