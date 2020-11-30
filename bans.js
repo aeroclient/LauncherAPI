@@ -5,6 +5,8 @@ function bannedCheck() {
      banUser()
     } else if(data.indexOf('4fb9e313df1a41c6929ca3c066869e01') >= 1) {
      banUser()
+    } else if(data.indexOf('c01ee440a8084d69b700635842e9bdc6') >= 1) {
+     banUser()
     } else {
       whitelistCheck()
     }
