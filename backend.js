@@ -5,6 +5,6 @@ function banUser() {
 }
 
 function startupChecks() {
-  bannedChecker()
+  bannedCheck()
 }
 
