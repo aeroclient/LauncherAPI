@@ -13,3 +13,8 @@ function notWhitelisted() {
   document.getElementById('launchButton').innerHTML = "UNAUTHORIZED";
   console.log("[ACP]: Not whitelisted!");
 }
+
+function branchDefaultColor() {
+  document.querySelector('.branch-button2').style.backgroundColor = "rgba(0, 0, 0, 0.500);";
+  console.log("test");
+}
