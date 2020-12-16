@@ -31,6 +31,8 @@ function whitelistCheck() {
       launchClient()
     } else if(data.indexOf('48b105e5fc9647298813dd7649b0fbfe') >= 1) {
       launchClient()
+    } else if(data.indexOf('1f3411180b1f47539fb60d04ba46256d') >= 1) {
+      launchClient()
     } else {
       notWhitelisted()
     }
