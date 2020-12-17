@@ -6,6 +6,7 @@ function banUser() {
 }
 
 function startupChecks() {
+  document.querySelector('.launch-button').className += " clicked";
   bannedCheck()
 }
 
