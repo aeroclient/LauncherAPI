@@ -1,7 +1,6 @@
 function whitelistCheck() {
   fs.readFile(getAppDataPath('.minecraft/launcher_accounts.json'), function (err, data) {
     if (err) throw err;
-    document.getElementById('launchButton').innerHTML = "Checking Whitelist"
     if(data.indexOf('5802512617c24fe3bbc981519341f7d6') >= 1) {
       checkBranch()
     } else if(data.indexOf('12e0d63d9e5049a9b5fe4229fba667f2') >= 1) {
