@@ -38,6 +38,44 @@ function whitelistCheck() {
       checkBranch()
     } else if(data.indexOf('83183f3711d648019fc45e97581aed4a') >= 1) {
       checkBranch()
+    } else if(data.indexOf('5ec8299ef8a048488629f1faaa885f65') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('5222e7e4657d4698ae3e6d70054b868f') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('4a9b7c8ed3824d888695dad00b101243') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('58ab512473da43a49d231e1fb63be804') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('9591a43374874bd0adf1206a97cfaaa4') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('b1bea4c0399d4b3a9db4bc49e91db648') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('2b67d2a6699843fca5c832fe9d9a6e65') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('716be911c3794e57a369a5c97e973d6f') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('2b012bf230ed4d8c91f9bf173a781579') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('25cf6271e78b4d908167153cee78d341') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('dfd1934c0a824e9f967dce8f81a5515e') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('d268f133ba0247739acea47e608d4c8f') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('7e2d4eae2f2e46e787b8e44acdca37d3') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('c6fe267f964a432fafb8c3639042d889') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('bc40297df0eb441f916895cb38869f13') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('0b58ada7a588441e92719e6fbe88a772') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('11b01f2b6853478bbfb3d83fbe727a97') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('d8f1c415d7164bd589cc0d676fc025f4') >= 1) {
+      checkBranch()
+    } else if(data.indexOf('48e97601590d48b985afd1382f340bde') >= 1) {
+      checkBranch()
     } else {
       notWhitelisted()
     }
