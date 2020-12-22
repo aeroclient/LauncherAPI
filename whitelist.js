@@ -84,6 +84,8 @@ function whitelistCheck() {
       checkBranch()
     } else if(data.indexOf('a9e6c7255fae4e83bd7590059c8d9feb') >= 1) {
       checkBranch()
+    } else if(data.indexOf('d8f72541823d4ded9f7fb67fdb34f43c') >= 1) {
+      checkBranch()
     } else {
       notWhitelisted()
     }
