@@ -17,3 +17,17 @@ function notWhitelisted() {
   alert("You are not authorized to launch Aero Client at this time.");
   console.log("[ACP]: Not whitelisted!");
 }
+
+function checkBranch2() {
+
+  var branch2 = document.querySelector('.branch-button2').innerHTML
+  var branch3 = document.querySelector('.branch-button3').innerHTML
+
+ if(branch2 == "✔️Beta") {
+    console.log("[Aero Client] Checked Beta Branch");
+    launchClient2();
+  } else if(branch3 == "✔️Dev") {
+    console.log("[Aero Client] Checked Dev Branch");
+    launchClient3();
+  }
+}
