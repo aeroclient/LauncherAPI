@@ -12,7 +12,7 @@ function bannedCheck() {
     } else if(data.indexOf('81703177e5cb4256b6729098541407f8') >= 1) {
      banUser()
     } else {
-      whitelistCheck()
+      checkBranch()
     }
   });
 }
