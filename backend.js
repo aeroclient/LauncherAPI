@@ -1,7 +1,7 @@
 function banUser() {
   document.getElementById('launchButton').style.backgroundColor = " rgba(252, 17, 0, 0.753)";
   document.getElementById('launchButton').innerHTML = "Banned";
-  alert("You are banned from Aero Client. Appeal at https://discord.aeroclient.tk");
+  alert("You are banned from Aero Client. Appeal at https://aeroclient.net/appeal");
   console.log("[ACP]: ACP_LAUNCH_BANNED");
 }
 
