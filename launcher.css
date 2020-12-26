@@ -19,9 +19,23 @@
     content: "Powered by CiCi Games • 2.2.1 [LauncherAPI-1.1]"
 }
 
+.snowflake.snowflake {
+  display: none;
+}
 
-/* Information Tab */
+.header-image.header-image {
+  width: 0px;
+  height: 0px;
+  padding: 9% 100%;
+  margin-left: -325px;
+  background:url('../img/header.png');
+}
 
-.aboutus::after {
-    content: "Aero Client is a Free Modpack and Client-Side AntiCheat built for Minecraft 1.7.10!";
+.logo.logo {
+  width: 0px;
+  height: 0px;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding: 32px 37px;
+  background:url('https://raw.githubusercontent.com/Aero-Client/LauncherAPI/master/logo.png');
 }
