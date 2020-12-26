@@ -6,7 +6,8 @@ function banUser() {
 }
 
 function startupChecks() {
-  bannedCheck()
+  document.getElementById('launchButton').style.backgroundColor = " rgba(109, 0, 252, 0.671)";
+  bannedCheck();
 }
 
 function notWhitelisted() {
