@@ -6,6 +6,7 @@ function banUser() {
 }
 
 function startupChecks() {
+  document.getElementById('launchButton').innerHTML = "Contacting ACP";
   document.getElementById('launchButton').style.backgroundColor = " rgba(109, 0, 252, 0.671)";
   bannedCheck();
 }
