@@ -28,7 +28,7 @@
   height: 0px;
   padding: 9% 100%;
   margin-left: -325px;
-  background:url('../img/header.png');
+  background:url('https://raw.githubusercontent.com/Aero-Client/LauncherAPI/master/header.png');
 }
 
 .logo.logo {
