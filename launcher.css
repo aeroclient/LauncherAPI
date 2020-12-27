@@ -12,7 +12,7 @@
 
 .blogcontent::after {
     font-weight: bold;
-    content: "As many of you know, the Winter Update was released on December 24th, the results were beyond what we expected from you guys. We had over 600 players launch the client in about an hour, which meanas alot since we've been working around the clock to add more new features to Aero Client. We want to thank you all for this amazing release, and it would not be possible without you guys. Thank you for continuing to support us, we will continue to work on Aero Client and make it have as many features as you guys want. Suggest us some features if you want in the discord! We hope you all had a December and 2020. We want to lastly wish everyone a Happy New Years, 2020 has been a long year for some of us, but lets hope for a better 2021. 💜";
+    content: "As many of you know, the Winter Update was released on December 24th, the results were beyond what we expected from you guys. We had over 600 players launch the client in about an hour, which meanas alot since we've been working around the clock to add more new features to Aero Client. We want to thank you all for this amazing release, and it would not be possible without you guys. Thank you for continuing to support us, we will continue to work on Aero Client and make it have as many features as possible. Suggest us some features if you want in the discord! We hope you all had a great December and 2020. We want to lastly wish everyone a Happy New Years, 2020 has been a long year for some of us, but lets hope for a better 2021. 💜";
 }
 
 .versiontext::after {
