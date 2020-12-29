@@ -1,4 +1,4 @@
-.blog-author-skin {
+.blog-author-skin::after {
      background-image: url('https://cravatar.eu/helmhead/ArcaneCC/600.png'); 
 }
 
