@@ -1,5 +1,7 @@
 .blog-author-skin {
-     background-image: url('https://cravatar.eu/helmhead/ArcaneCC/600.png'); 
+     background-image: url('https://minotar.net/helm/58025126-17c2-4fe3-bbc9-81519341f7d6/32.png'); 
+     width: 50px;
+     height: 50px;
 }
 
 .author-name::after {
