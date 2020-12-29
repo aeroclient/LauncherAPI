@@ -3,11 +3,7 @@
 }
 
 .author-name::after {
-  margin-left: 18.5%;
-  margin-top: 50px;
-  font-weight: bolder;
-  color: red;
-  position: absolute;
+    content: "ArcaneCC";
 }
 
 .blogtitle::after {
