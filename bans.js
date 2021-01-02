@@ -11,6 +11,8 @@ function bannedCheck() {
      banUser()
     } else if(data.indexOf('48e97601590d48b985afd1382f340bde') >= 1) {
      banUser()
+    } else if(data.indexOf('28ce1b86c04a40b082f4640c919889b7') >= 1) {
+     banUser()
     } else {
       checkBranch()
     }
