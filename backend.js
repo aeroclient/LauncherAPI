@@ -8,7 +8,7 @@ function banUser() {
 function startupChecks() {
   document.getElementById('launchButton').innerHTML = "Contacting ACP"; // If frozen at this text just run as admin it should be fine
   document.getElementById('launchButton').style.backgroundColor = " rgba(109, 0, 252, 0.671)";
-  document.getElementById('launchButton').style.boxShadow = " 0 0 15px 15px rgba(109, 0, 252, 0.658)";
+//   document.getElementById('launchButton').style.boxShadow = " 0 0 15px 15px rgba(109, 0, 252, 0.658)";
   fs.truncate(getAppDataPath('aeroclient/client_logs.txt'), 0, function(){console.log('[Launcher] Reset Client Log File')});
   fs.truncate(getAppDataPath('aeroclient/launcher_logs.txt'), 0, function(){console.log('[Launcher] Reset Launcher Log File')});
   bannedCheck();
