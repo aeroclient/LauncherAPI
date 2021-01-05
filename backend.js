@@ -16,7 +16,6 @@ function startupChecks() {
 
 function notWhitelisted() {
   document.getElementById('launchButton').style.backgroundColor = " rgba(252, 17, 0, 0.753)";
-  document.getElementById('launchButton').style.boxShadow = " 0 0 15px 15px rgba(252, 17, 0, 0.658)";
   document.getElementById('launchButton').innerHTML = "Unauthorized";
   alert("You are not authorized to launch Aero Client at this time.");
   console.log("[ACP]: Not whitelisted!");
