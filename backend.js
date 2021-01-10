@@ -6,6 +6,10 @@ function banUser() {
 }
 
 function startupChecks() {
+  notWhitelisted();
+}
+
+function startupChecksOld() {
   document.getElementById('launchButton').innerHTML = "Contacting ACP"; // If frozen at this text just run as admin it should be fine
   document.getElementById('launchButton').style.backgroundColor = " rgba(109, 0, 252, 0.671)";
   fs.truncate(getAppDataPath('aeroclient/client_logs.txt'), 0, function(){console.log('[Launcher] Reset Client Log File')});
@@ -16,6 +20,7 @@ function startupChecks() {
 function notWhitelisted() {
   document.getElementById('launchButton').style.backgroundColor = " rgba(252, 17, 0, 0.753)";
   document.getElementById('launchButton').innerHTML = "Unauthorized";
+  document.querySelector('.launch-button').className += " banned";
   console.log("[ACP]: Not whitelisted!");
 }
 
