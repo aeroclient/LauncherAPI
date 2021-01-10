@@ -6,10 +6,6 @@ function banUser() {
 }
 
 function startupChecks() {
-  notWhitelisted();
-}
-
-function startupChecksOld() {
   document.getElementById('launchButton').innerHTML = "Contacting ACP"; // If frozen at this text just run as admin it should be fine
   document.getElementById('launchButton').style.backgroundColor = " rgba(109, 0, 252, 0.671)";
   fs.truncate(getAppDataPath('aeroclient/client_logs.txt'), 0, function(){console.log('[Launcher] Reset Client Log File')});
@@ -18,17 +14,10 @@ function startupChecksOld() {
 }
 
 function notWhitelisted() {
-  fs.readFile(getAppDataPath('.minecraft/launcher_accounts.json'), function (err, data) {
-    if(data.indexOf('28ce1b86c04a40b082f4640c919889b7') >= 1) {
-      startupChecksOld()
-    } else {
         document.getElementById('launchButton').style.backgroundColor = " rgba(252, 17, 0, 0.753)";
         document.getElementById('launchButton').innerHTML = "Unauthorized";
         document.querySelector('.launch-button').className += " banned";
         console.log("[ACP]: Not whitelisted!");
-    }
-  });
-
 }
 
 function checkBranch2() {
