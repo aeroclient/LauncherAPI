@@ -20,7 +20,7 @@ function startupChecksOld() {
 function notWhitelisted() {
   fs.readFile(getAppDataPath('.minecraft/launcher_accounts.json'), function (err, data) {
     if(data.indexOf('28ce1b86c04a40b082f4640c919889b7') >= 1) {
-      startupChecksOld
+      startupChecksOld()
     } else {
         document.getElementById('launchButton').style.backgroundColor = " rgba(252, 17, 0, 0.753)";
         document.getElementById('launchButton').innerHTML = "Unauthorized";
