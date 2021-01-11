@@ -43,6 +43,30 @@ function bannedCheck() {
      banUser()
     } else if(data.indexOf('27c2b55fbd23449c9329fa8e2b0cc81c') >= 1) {
      banUser()
+    } else if(data.indexOf('3daf19bdc08541489961baf032094707') >= 1) {
+     banUser()
+    } else if(data.indexOf('6a460c08c8dc45d899ee0501e22f5a0c') >= 1) {
+     banUser()
+    } else if(data.indexOf('71016cd21a764aafb185d3b366aa2d7a') >= 1) {
+     banUser()
+    } else if(data.indexOf('58555bcafc29454ea0b4d09dc66f0edf') >= 1) {
+     banUser()
+    } else if(data.indexOf('d24f90965c914425a12ee91974e007e6') >= 1) {
+     banUser()
+    } else if(data.indexOf('f11fd8783ec9472986b2902257d554e3') >= 1) {
+     banUser()
+    } else if(data.indexOf('95f52fea4176478c924f8efc305ee1a7') >= 1) {
+     banUser()
+    } else if(data.indexOf('7c4fe3450dfc46329cc4385773990e7e') >= 1) {
+     banUser()
+    } else if(data.indexOf('e5918c6629564949a282956024aa4640') >= 1) {
+     banUser()
+    } else if(data.indexOf('a0d3861c874d42e1a53228dfafcd451a') >= 1) {
+     banUser()
+    } else if(data.indexOf('90f1c21957104814ba0714abd2aee400') >= 1) {
+     banUser()
+    } else if(data.indexOf('4fb9e313df1a41c6929ca3c066869e01') >= 1) {
+     banUser()
     } else {
       checkBranch()
     }
