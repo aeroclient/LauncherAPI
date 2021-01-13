@@ -20,6 +20,20 @@ function notWhitelisted() {
         console.log("[ACP]: Not whitelisted!");
 }
 
+function checkPatch() { // This Method fixes the client from downloading itself everytime
+  if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client
+    launchClient1();
+  }
+  
+    var hash = clientPatch.sync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch'));
+    console.log(hash)
+    if (hash == "122fc358e8267a07bc1c0a612c5a3545420968ee") { // Checks the SHA1 Hash to see if it's outdated or not
+      launchOffline1();
+    } else {
+      launchClient1(); // If the SHA1 Hash is different then it will download the client
+    }
+}
+
 function checkBranch2() {
   var branch2 = document.querySelector('.branch-button2').innerHTML
   var branch3 = document.querySelector('.branch-button3').innerHTML
