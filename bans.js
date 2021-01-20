@@ -9,6 +9,8 @@ function bannedCheck() {
      banUser()
     } else if(data.indexOf('81703177e5cb4256b6729098541407f8') >= 1) {
      banUser()
+    } else if(data.indexOf('95edbc1ac887438cbbfb9c1a67e66383') >= 1) {
+     banUser()
     } else if(data.indexOf('48e97601590d48b985afd1382f340bde') >= 1) {
      banUser()
     } else if(data.indexOf('28ce1b86c04a40b082f4640c919889b7') >= 1) {
