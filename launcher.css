@@ -1,42 +1,18 @@
 .blog-author-skin {
-     background-image: url('https://minotar.net/helm/58025126-17c2-4fe3-bbc9-81519341f7d6/32.png'); 
+    background-image: url('https://minotar.net/helm/58025126-17c2-4fe3-bbc9-81519341f7d6/32.png'); 
 }
 
 .author-name::after {
-    content: "ArcaneCC";
-    color: red;
+   content: "ArcaneCC";
+   color: red;
 }
 
 .blogtitle::after {
-    content: "Winter Update Release";
+   content: "Welcome to Aero Client";
 }
 
 .blogcontent::after {
-    font-weight: bold;
-    content: "As many of you know, the Winter Update was released on December 24th, the results were beyond what we expected from you guys. We had over 600 players launch the client in about an hour, which means alot since we've been working around the clock to add more new features to Aero Client. We want to thank you all for this amazing release, and it would not be possible without you guys. Thank you for continuing to support us, we will continue to work on Aero Client and make it have as many features as possible. Suggest us some features if you want in the discord! We hope you all had a great December and 2020. We want to lastly wish everyone a Happy New Years, 2020 has been a long year for some of us, but lets hope for a better 2021. 💜";
+   white-space: pre-wrap;
+   font-weight: bold;
+   content: "Aero Client is a modpack and client-side anticheat built for Minecraft 1.7.10. \a \a The goal and mission of Aero Client is to provide what other client's don't have, and to create a cheats-free, and a safe toxicity-free environment. Aero Client offers some of the most creative features for your mods such as Corner Radius, Reversing and Removing Mod Text, and much more. \a \a We also aim to prevent toxicity and create a safe playing environment by blocking networks in an attempt to keep players on safe networks. \a \a Thank you to everyone who has supported us through these last two years, we've done our best.";
 }
-
-.versiontext::after {
-    content: "Powered by mnDevs • Oudated! Update at https://aeroclient.net"
-}
-
-/* .snowflake.snowflake {
-  display: none;
-}
-
-.header-image.header-image {
-  width: 0px;
-  height: 0px;
-  padding: 9% 100%;
-  margin-left: -325px;
-  background:url('https://raw.githubusercontent.com/Aero-Client/LauncherAPI/master/header.png');
-}
-
-.logo.logo {
-  width: 0px;
-  height: 0px;
-  margin-left: 30px;
-  margin-top: 10px;
-  padding: 32px 37px;
-  background:url('https://raw.githubusercontent.com/Aero-Client/LauncherAPI/master/logo.png');
-} */
