@@ -20,7 +20,7 @@ function notWhitelisted() {
         console.log("[ACP]: Not whitelisted!");
 }
 
-function checkPatch() { // This Method fixes the client from downloading itself everytime
+function checkPatch2() { // This Method fixes the client from downloading itself everytime
   var version2 = document.querySelector('.version-button2').innerHTML
   var version3 = document.querySelector('.version-button3').innerHTML
 
@@ -30,7 +30,7 @@ function checkPatch() { // This Method fixes the client from downloading itself 
   } else if(version3 == "✔️1.16") {
     alert("Aero Client 1.16 is not released, we will announce when it is though!");
     showLauncher();
-  }
+  } else {
   
   if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client
     launchClient1();
@@ -42,6 +42,7 @@ function checkPatch() { // This Method fixes the client from downloading itself 
       launchOffline1();
     } else {
       launchClient1(); // If the SHA1 Hash is different then it will download the client
+        }
     }
 }
 
