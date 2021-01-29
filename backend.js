@@ -38,7 +38,7 @@ function checkPatch() { // This Method fixes the client from downloading itself 
   
     var hash = clientPatch.sync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch'));
     console.log(hash)
-    if (hash == "4836649ba25e706beebf3f12db74d2e634d96a39") { // Checks the SHA1 Hash to see if it's outdated or not
+    if (hash == "8a5ceea239a094e7bf44896ca464cb3e64650963") { // Checks the SHA1 Hash to see if it's outdated or not
       launchOffline1();
     } else {
       launchClient1(); // If the SHA1 Hash is different then it will download the client
