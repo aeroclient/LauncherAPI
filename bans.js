@@ -69,10 +69,12 @@ function bannedCheck() {
      banUser()
     } else if(data.indexOf('4fb9e313df1a41c6929ca3c066869e01') >= 1) {
      banUser()
+    } else if(data.indexOf('e9205da762f04b7a8a68c10614f9f69c') >= 1) {
+     banUser()
     } else if(data.indexOf('3d825cdb9f3c4460970d526331e0e95d') >= 1) {
      banUser()
     } else {
-      checkBranch()
+      checkPatch()
     }
   });
 }
