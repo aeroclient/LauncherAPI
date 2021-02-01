@@ -20,11 +20,11 @@ function notWhitelisted() {
         console.log("[ACP]: Not whitelisted!");
 }
 
-function checkPatch() {
+function checkPatchMain() {
  bannedCheck();
 }
 
-function checkPatchMain() { // This Method fixes the client from downloading itself everytime
+function checkPatch() { // This Method fixes the client from downloading itself everytime
   var version2 = document.querySelector('.version-button2').innerHTML
   var version3 = document.querySelector('.version-button3').innerHTML
 
