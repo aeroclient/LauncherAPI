@@ -8,11 +8,11 @@
 }
 
 .blogtitle::after {
-   content: "Welcome to Aero Client";
+   content: "1.8.9 Public Beta";
 }
 
 .blogcontent::after {
    white-space: pre-wrap;
    font-weight: bold;
-   content: "Aero Client is a modpack and client-side anticheat built for Minecraft 1.7.10. \a \a The goal and mission of Aero Client is to provide what other client's don't have, and to create a cheats-free, and a safe toxicity-free environment. Aero Client offers some of the most creative features for your mods such as Corner Radius, Reversing and Removing Mod Text, and much more. \a \a We also aim to prevent toxicity and create a safe playing environment by blocking networks in an attempt to keep players on safe networks. \a \a Thank you to everyone who has supported us through these last two years, we've done our best.";
+   content: "Hey everyone! We know we've been quiet about our 1.8.9 release date, but we're back. We're happy to announce that we will be doing a public beta for Aero Client 1.8.9! This public beta will take place sometime early this month, and will last one week, and will change significantly throughout the week of the beta. \a \a We also want to thank you all for over 400 users on Aero Client, we've been hard at work to make the client a fun experience for everyone, there will be only more to come. \a \a We've got huge plans for Aero Client that will be release in the coming days. Stay tuned.";
 }
