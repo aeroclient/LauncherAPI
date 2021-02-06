@@ -42,7 +42,7 @@ function banUser() {
     
       var hash = clientPatch.sync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch'));
       console.log(hash)
-      if (hash == "ce9181f7d0387b3dc9e3d5ed03e59910073ad740") { // Checks the SHA1 Hash to see if it's outdated or not
+      if (hash == "4c7348f53b607624c458d308c0118bd2097b68a9") { // Checks the SHA1 Hash to see if it's outdated or not
         launchOffline1();
       } else {
         launchClient1(); // If the SHA1 Hash is different then it will download the client
