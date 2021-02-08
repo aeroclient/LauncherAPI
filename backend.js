@@ -29,22 +29,21 @@ function checkPatch() { // This Method fixes the client from downloading itself 
   var version2 = document.querySelector('.version-button2').innerHTML
   var version3 = document.querySelector('.version-button3').innerHTML
 
-  if (version2 == "✔️1.8.9") {
+  if (version1 == "✔️1.7.10 (Default)") {
+    checkFirstPatch();
+  } else if (version2 == "✔️1.8.9") {
     alert("Aero Client 1.8.9 is not released, we will announce when it is though!");
     showLauncher();
-    //checkSecondPatch();
   } else if(version3 == "✔️1.16") {
     alert("Aero Client 1.16 is not released, we will announce when it is though!");
     showLauncher();
-  } else if (version1 == "✔️1.7.10 (Default)") {
-    checkFirstPatch();
   }
 
 }
 
 function checkFirstPatch() {
   if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client.
-  launchClient1();
+    launchClient1();
   }
 
     var hash = clientPatch.sync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch'));
@@ -59,7 +58,7 @@ function checkFirstPatch() {
 
 function checkSecondPatch() {
   if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.8.9/AeroClient-1.8.9.patch')))) {
-    launchClient1();
+    launchClient2();
   }
   
     var hash2 = clientPatch.sync(getAppDataPath('.minecraft/versions/AeroClient-1.8.9/AeroClient-1.8.9.patch')); // (1.8.9)
