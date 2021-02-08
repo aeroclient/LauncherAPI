@@ -49,7 +49,7 @@ function checkFirstPatch() {
 
     var hash = clientPatch.sync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch'));
     console.log("Current Client Hash - " + hash)
-    if (hash == "42f6d5df4b3d683d6c46e9569cdf6d6342431635") { // Checks the SHA1 Hash to see if it's outdated or not.
+    if (hash == "709d812d4b30ad24c03b4adb63862c922c4a89ef") { // Checks the SHA1 Hash to see if it's outdated or not. (1.7.10)
       launchOffline1();
     } else {
       launchClient1(); // If the SHA1 Hash is different then it will download the client.
@@ -58,18 +58,18 @@ function checkFirstPatch() {
 }
 
 function checkSecondPatch() {
-
   if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.8.9/AeroClient-1.8.9.patch')))) {
     launchClient1();
   }
   
-    var hash2 = clientPatch.sync(getAppDataPath('.minecraft/versions/AeroClient-1.8.9/AeroClient-1.8.9.patch'));
+    var hash2 = clientPatch.sync(getAppDataPath('.minecraft/versions/AeroClient-1.8.9/AeroClient-1.8.9.patch')); // (1.8.9)
     console.log("Current Client Hash - " + hash2)
     if (hash2 == "Coming Soon") {
       launchOffline2();
     } else {
       launchClient2();
     }
+    
 }
 
 async function launchClient2() {
