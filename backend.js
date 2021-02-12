@@ -25,20 +25,7 @@ function banUser() {
   }
 
 function checkPatch() { // This Method fixes the client from downloading itself everytime.
-  var version1 = document.querySelector('.version-button1').innerHTML
-  var version2 = document.querySelector('.version-button2').innerHTML
-  var version3 = document.querySelector('.version-button3').innerHTML
-
-  if (version1 == "✔️1.7.10 (Default)") {
     checkFirstPatch();
-  } else if (version2 == "✔️1.8.9") {
-    alert("Aero Client 1.8.9 is not released, we will announce when it is though!");
-    showLauncher();
-  } else if(version3 == "️✔️1.16") {
-    alert("Aero Client 1.16 is not released, we will announce when it is though!");
-    showLauncher();
-  }
-
 }
 
 function checkFirstPatch() {
