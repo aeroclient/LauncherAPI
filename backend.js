@@ -50,7 +50,7 @@ function checkSecondPatch() {
   
     var hash2 = clientPatch.sync(getAppDataPath('.minecraft/versions/AeroClient-1.8.9/AeroClient-1.8.9.patch')); // (1.8.9)
     console.log("Current Client Hash - " + hash2)
-    if (hash2 == "f9080813325b83f28d240c9faa89d45516d925e8") {
+    if (hash2 == "[Redacted]") {
       launchOffline2();
     } else {
       launchClient2();
