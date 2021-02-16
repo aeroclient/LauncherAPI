@@ -1,5 +1,10 @@
 var clienthash = "a9d0406b457543f28ad820448e1f63de17304c11";
 
+function quickConnectMain0() {
+    alert("This server requires 1.8.9, which Aero Client does not currently support.");
+    showLauncher();
+}
+
 function quickConnectMain1() {
 
     if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client.
