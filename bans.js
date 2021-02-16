@@ -78,7 +78,7 @@ function bannedCheck() {
     } else if(data.indexOf('fec40f7e25df453087027f516e119efa') >= 1) {
      banUser()
     } else {
-      checkFirstPatch();()
+      checkFirstPatch();
     }
   });
 }
