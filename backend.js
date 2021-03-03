@@ -23,11 +23,11 @@ function banUser() {
   }
   
   function startupChecksMain() {
-    checkPatch();
+    bannedCheck();
   }
 
 function checkPatch() { // This Method fixes the client from downloading itself everytime.
-    checkFirstPatch();
+    bannedCheck();
 }
 
 function checkFirstPatch() {
