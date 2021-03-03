@@ -132,9 +132,12 @@ function quickConnectMain0() {
     showLauncher();
 }
 
-function quickConnectMain1() {
+function quickConnectMain1() { 
+    bannedCheck2();
+}
 
-    if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client.
+function quickMain1() {
+     if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client.
     onlinePopular1();
   }
 
@@ -144,13 +147,15 @@ function quickConnectMain1() {
       offlinePopular1();
     } else {
         onlinePopular1(); // If the SHA1 Hash is different then it will download the client.
-    }
-
+    }   
 }
 
 function quickConnectMain2() {
+    bannedCheck3();
+}
 
-    if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client.
+function quickMain2() {
+        if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client.
     onlinePartner1();
   }
 
@@ -160,15 +165,16 @@ function quickConnectMain2() {
         offlinePartner1();
     } else {
         onlinePartner1(); // If the SHA1 Hash is different then it will download the client.
-    }
-
+    }   
 }
 
-
-
 function quickConnectMain3() {
+    bannedCheck4();
+}
 
-    if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client.
+function quickMain3() {
+
+  if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch')))) { // If the client doesn't exist it will download the client.
     onlinePartner2();
   }
 
