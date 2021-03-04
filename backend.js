@@ -1,4 +1,4 @@
-var clienthash = "881af1fb15990c3af66df9ed2d59bbaac96776f9";
+var clienthash = "9bb736255df7a1e9422703eb3ee0c45502d1fe3a";
 
 function banUser() {
     document.getElementById('launchButton').style.backgroundColor = " rgba(252, 17, 0, 0.753)";
