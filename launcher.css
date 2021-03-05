@@ -8,13 +8,13 @@
 }
 
 .blogtitle::after {
-   content: "1.8.9 Public Beta";
+   content: "1.7.10 Updates";
 }
 
 .blogcontent::after {
    white-space: pre-wrap;
    font-weight: bold;
-   content: "Hey everyone! We know we've been quiet about our 1.8.9 release date, but we're back. We're happy to announce that we will be doing a public beta for Aero Client 1.8.9! This public beta will take place sometime early this month, and will last one week, and will change significantly throughout the week of the beta. \a \a We also want to thank you all for over 400 users on Aero Client, we've been hard at work to make the client a fun experience for everyone, there will be only more to come. \a \a We've got huge plans for Aero Client that will be release in the coming days. Stay tuned.";
+   content: "Over the past few weeks we've been working to make the experience for Aero Client 1.7.10 more enjoyable. Today we released an update that will change the experience of how cosmetics and other features are used. \a \a Aero Client now has the most customization than any other client. We now have rounded backgrounds for your mods, you can now format your mod text, remove the text entirely, or add different text to it as well! We are also working on bringing more cosmetic types to the table, some unique and some that are popular. \a \a We know we've been quiet recently, but we're back, and better than ever. We're also cracking down on bugs! You can now submit bugs in the mod menu, lets work together on making Aero Client better!";
 }
 
 .about-responsemain::after {
