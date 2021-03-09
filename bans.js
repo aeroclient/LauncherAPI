@@ -9,6 +9,8 @@ function bannedCheck() {
       banUser()
     } else if(data.indexOf('7841d78f9294417fa8ba2dcf69ee0cf4') >= 1) {
       banUser()
+    } else if(data.indexOf('7a16ec7783334eff8d47f39e4df721d7') >= 1) {
+      banUser()
     } else {
       checkFirstPatch();
     }
@@ -25,6 +27,8 @@ function bannedCheck2() {
     } else if(data.indexOf('f9253756dc8744ed81f8f03811ab89b4') >= 1) {
       banUser()
     } else if(data.indexOf('7841d78f9294417fa8ba2dcf69ee0cf4') >= 1) {
+      banUser()
+    } else if(data.indexOf('7a16ec7783334eff8d47f39e4df721d7') >= 1) {
       banUser()
     } else {
       quickMain1();
@@ -43,6 +47,8 @@ function bannedCheck3() {
       banUser()
     } else if(data.indexOf('7841d78f9294417fa8ba2dcf69ee0cf4') >= 1) {
       banUser()
+    } else if(data.indexOf('7a16ec7783334eff8d47f39e4df721d7') >= 1) {
+      banUser()
     } else {
       quickMain2();
     }
@@ -59,6 +65,8 @@ function bannedCheck4() {
     } else if(data.indexOf('f9253756dc8744ed81f8f03811ab89b4') >= 1) {
       banUser()
     } else if(data.indexOf('7841d78f9294417fa8ba2dcf69ee0cf4') >= 1) {
+      banUser()
+    } else if(data.indexOf('7a16ec7783334eff8d47f39e4df721d7') >= 1) {
       banUser()
     } else {
       quickMain3();
