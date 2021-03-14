@@ -3,8 +3,8 @@
 }
 
 .author-name::after {
-   content: "ArcaneOW";
-   color: red;
+   content: "ArcaneCC";
+   color: #ff0000;
 }
 
 .blogtitle::after {
