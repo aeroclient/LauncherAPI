@@ -22,9 +22,17 @@ function banUser() {
           console.log("[ACP]: Not whitelisted!");
   }
   
-  function startupChecksMain() {
+function startupChecksMain() {
+  if (version1 == "✔️1.7.10 (Default)") {
     checkFirstPatch();
+  } else if (version2 == "✔️1.8.9") {
+    alert("Aero Client 1.8.9 is not released, we will announce when it is though!");
+    showLauncher();
+  } else if(version3 == "️✔️1.16") {
+    alert("Aero Client 1.16 is not released, we will announce when it is though!");
+    showLauncher();
   }
+}
 
 function checkPatch() { // This Method fixes the client from downloading itself everytime.
     bannedCheck();
