@@ -23,7 +23,13 @@ function banUser() {
   }
   
 function startupChecksMain() {
+ var branch2 = document.querySelector('.branch-button2').innerHTML
+
+ if(branch2 == "✔️Beta") {
+    whitelistCheck();
+  } else {
     checkFirstPatch();
+  }
 }
 
 function checkPatch() { // This Method fixes the client from downloading itself everytime.
@@ -146,7 +152,7 @@ function quickMain1() {
     if (hash == clienthash) { // Checks the SHA1 Hash to see if it's outdated or not. (1.7.10)
       offlinePopular1();
     } else {
-        onlinePopular1(); // If the SHA1 Hash is different then it will download the client.
+       onlinePopular1(); // If the SHA1 Hash is different then it will download the client.
     }   
 }
 
