@@ -66,6 +66,34 @@ function checkSecondPatch() {
     
 }
 
+async function launchBeta() {
+     document.querySelector('.launch-button').className += " clicked";
+     document.getElementById('launchButton').innerHTML = "Updating Patch"
+   
+     console.log("[Aero Client] Launching Stable Branch");
+     client.launch({ 
+       authorization: Authenticator.getAuth("User"),
+       clientPackage: "https://github.com/Aero-Client/BetaBranch/releases/download/1.0/AeroClientBeta-1.7.10.zip",
+       removePackage: "clientPackage.zip",
+       root: getAppDataPath(".minecraft"),
+       javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
+       version: {
+         number: "1.7.10",
+         custom: "AeroClientBeta-1.7.10"
+       },
+       memory: {
+           max: document.getElementById("ramslider").value,
+           min: "1024"
+       },
+       overrides: {
+         minecraftJar: getAppDataPath(".minecraft/versions/AeroClientBeta-1.7.10/AeroClientBeta-1.7.10.patch"),
+       }
+   }).catch(e => {
+       console.log(e.message);
+       launchError();
+   })
+}
+
 async function launchClient2() {
      document.querySelector('.launch-button').className += " clicked";
      document.getElementById('launchButton').innerHTML = "Updating Patch"
