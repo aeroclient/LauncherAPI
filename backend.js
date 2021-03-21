@@ -24,12 +24,17 @@ function banUser() {
   
 function startupChecksMain() {
  var branch2 = document.querySelector('.branch-button2').innerHTML
+ var version2 = document.querySelector('.version-button2').innerHTML
 
- if(branch2 == "✔️Beta") {
+  if (version2 == "✔️1.8.9") {
+    const { shell } = require('electron')
+    shell.openExternal('https://youtu.be/dQw4w9WgXcQ')
+  } else if(branch2 == "✔️Beta") {
     whitelistCheck();
   } else {
     checkFirstPatch();
   }
+
 }
 
 function checkPatch() { // This Method fixes the client from downloading itself everytime.
