@@ -1,22 +1,22 @@
 .blog-author-skin {
-    background-image: url('https://minotar.net/helm/ArcaneCC/32.png'); 
+    background-image: url('https://minotar.net/helm/whiteparrot/32.png'); 
 }
 
 .author-name::after {
-   content: "ArcaneCC";
+   content: "WhiteParrot";
    color: #ff0000;
 }
 
 .blogtitle::after {
-   content: "1.7.10 Updates";
+   content: "Preparing for Production";
 }
 
 .blogcontent::after {
    white-space: pre-wrap;
    font-weight: bold;
-   content: "Over the past few weeks we've been working to make the experience for Aero Client 1.7.10 more enjoyable. Today we released an update that will change the experience of how cosmetics and other features are used. \a \a Aero Client now has the most customization than any other client. We now have rounded backgrounds for your mods, you can now format your mod text, remove the text entirely, or add different text to it as well! We are also working on bringing more cosmetic types to the table, some unique and some that are popular. \a \a We know we've been quiet recently, but we're back, and better than ever. We're also cracking down on bugs! You can now submit bugs in the mod menu, lets work together on making Aero Client better!";
+   content: "Offline Aero Client is currently being prepared for Production";
 }
 
 .about-responsemain::after {
-   content: "Aero Client is a Free Modpack built for Minecraft 1.7.10. The goal and mission of Aero Client is to create a non-toxic and safe playing environment.";
+   content: "Offline Aero Client is a Free Modpack built for Minecraft 1.7.10. The goal and mission of Offline Aero Client is to create a non-toxic and safe playing environment. and recreate old days of Aero Client";
 }
