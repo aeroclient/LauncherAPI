@@ -28,7 +28,7 @@ function startupChecksMain() {
 
   if (version2 == "✔️1.8.9") {
     const { shell } = require('electron')
-    shell.openExternal('https://youtu.be/dQw4w9WgXcQ')
+    shell.openExternal('https://itsjhalt2-dev.github.io/website/1.8.9')
   } else if(branch2 == "✔️Beta") {
     whitelistCheck();
   } else {
