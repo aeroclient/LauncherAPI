@@ -1,9 +1,9 @@
 .blog-author-skin {
-    background-image: url('https://minotar.net/helm/BlueDreamXD/32.png'); 
+    background-image: url('https://minotar.net/helm/Vap0urz/32.png'); 
 }
 
 .author-name::after {
-   content: "BlueDreamXD";
+   content: "Vap0urz";
    color: #ff0000;
 }
 
