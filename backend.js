@@ -28,8 +28,6 @@ function startupChecksMain() {
 
   if (version2 == "✔️1.8.9") {
   } else if(branch2 == "✔️Beta") {
-    whitelistCheck();
-  } else {
     checkSecondPatch();
   }
 
