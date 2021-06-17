@@ -27,12 +27,10 @@ function startupChecksMain() {
  var version2 = document.querySelector('.version-button2').innerHTML
 
   if (version2 == "✔️1.8.9") {
-    const { shell } = require('electron')
-    shell.openExternal('https://itsjhalt2-dev.github.io/website/1.8.9')
   } else if(branch2 == "✔️Beta") {
     whitelistCheck();
   } else {
-    checkFirstPatch();
+    checkSecondPatch();
   }
 
 }
