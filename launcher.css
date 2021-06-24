@@ -1,9 +1,9 @@
 .blog-author-skin {
-    background-image: url('https://minotar.net/helm/Vap0urz/32.png'); 
+    background-image: url('https://minotar.net/helm/dAvln/32.png'); 
 }
 
 .author-name::after {
-   content: "Vap0urz";
+   content: "OfflineAero staff";
    color: #ff0000;
 }
 
