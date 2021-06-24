@@ -26,10 +26,10 @@ function startupChecksMain() {
  var branch2 = document.querySelector('.branch-button2').innerHTML
  var version2 = document.querySelector('.version-button2').innerHTML
 
-if (version2 == "✔️1.8.9") {
-} else if(branch2 == "✔️Beta") {
+if (version1 == "✔️1.7.10") {
+} else if(branch2 == "✔️Stable (Default)") {
     whitelistCheck(); }
-    else { checkSecondPatch(); 
+    else { checkfirstPatch(); 
 }
 
 }
