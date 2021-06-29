@@ -8,13 +8,13 @@
 }
 
 .blogtitle::after {
-   content: "Preparing for Production";
+   content: "Beta Production";
 }
 
 .blogcontent::after {
    white-space: pre-wrap;
    font-weight: bold;
-   content: "https://cdn.discordapp.com/attachments/854078511693299772/858305065987342346/2021-06-26_13.11.20.png";
+   content: "Welcome to Beta Release. this is the first ever beta release. we all hope you enjoy it. and beta 2 will be coming shortly. with the website in a few days.";
 }
 
 .about-responsemain::after {
