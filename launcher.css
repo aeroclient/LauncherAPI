@@ -1,5 +1,5 @@
 .blog-author-skin {
-    background-image: url('https://minotar.net/helm/dAvln/32.png'); 
+    background-image: url('https://minotar.net/helm/Arcanecc/32.png'); 
 }
 
 .author-name::after {
@@ -18,5 +18,5 @@
 }
 
 .about-responsemain::after {
-   content: "Offline Aero Client is a Free Modpack built for Minecraft 1.7.10. The goal and mission of Offline Aero Client is to create a non-toxic and safe playing environment. and recreate old days of Aero Client";
+   content: "Aero Clien is a Free Modpack built for Minecraft 1.7.10. The goal and mission of Aero Client is to provide an easy to setup playing enviornment for Minecraft 1.7.10 that offers some simple but useful mods.";
 }
