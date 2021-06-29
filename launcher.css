@@ -3,7 +3,7 @@
 }
 
 .author-name::after {
-   content: "OfflineAero staff";
+   content: "ArcaneCC";
    color: #ff0000;
 }
 
@@ -14,9 +14,9 @@
 .blogcontent::after {
    white-space: pre-wrap;
    font-weight: bold;
-   content: "Offline Aero Client is currently being prepared for Production";
+   content: "Aero Client is currently being prepared for Production";
 }
 
 .about-responsemain::after {
-   content: "Aero Clien is a Free Modpack built for Minecraft 1.7.10. The goal and mission of Aero Client is to provide an easy to setup playing enviornment for Minecraft 1.7.10 that offers some simple but useful mods.";
+   content: "Aero Client is a Free Modpack built for Minecraft 1.7.10. The goal and mission of Aero Client is to provide an easy to setup playing enviornment for Minecraft 1.7.10 that offers some simple but useful mods.";
 }
