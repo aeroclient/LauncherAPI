@@ -1,9 +1,9 @@
 .blog-author-skin {
-    background-image: url('https://minotar.net/helm/Arcanecc/32.png'); 
+    background-image: url('https://minotar.net/helm/Swxtq/32.png'); 
 }
 
 .author-name::after {
-   content: "ArcaneCC";
+   content: "MagmaPyro";
    color: #ff0000;
 }
 
