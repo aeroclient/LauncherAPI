@@ -1,4 +1,4 @@
-var clienthash = "6d6fb6e8c99260e9cfbba59cb89a1907845c82f2";
+var clienthash = "7832ba0f7b63ced59592217a92fb9fe65211d37f";
 
 function banUser() {
     document.getElementById('launchButton').style.backgroundColor = " rgba(252, 17, 0, 0.753)";
@@ -24,14 +24,12 @@ function banUser() {
   
 function startupChecksMain() {
  var branch2 = document.querySelector('.branch-button2').innerHTML
- var version2 = document.querySelector('.version-button2').innerHTML
 
-if (version1 == "✔️1.7.10") {
-} else if(branch2 == "✔️Stable (Default)") {
-    whitelistCheck(); }
-    else { checkfirstPatch(); 
-}
-
+ if(branch2 == "✔️Beta") {
+    checkSecondPatch();
+  } else {
+      launchClient1(); // If the SHA1 Hash is different then it will download the client.
+    }
 }
 
 function checkPatch() { // This Method fixes the client from downloading itself everytime.
@@ -75,7 +73,7 @@ async function launchBeta() {
      console.log("[Aero Client] Launching Stable Branch");
      client.launch({ 
        authorization: Authenticator.getAuth("User"),
-       clientPackage: "",
+       clientPackage: "https://github.com/Aero-Client/BetaBranch/releases/download/1.0/AeroClientBeta-1.7.10.zip",
        removePackage: "clientPackage.zip",
        root: getAppDataPath(".minecraft"),
        javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
@@ -98,7 +96,7 @@ async function launchBeta() {
 
 async function launchClient2() {
      document.querySelector('.launch-button').className += " clicked";
-     document.getElementById('launchButton').innerHTML = "Updating Patch"
+     document.getElementById('launchButton').innerHTML = "Updating Test"
    
      console.log("[Aero Client] Launching Stable Branch");
      client.launch({ 
@@ -231,7 +229,7 @@ async function onlinePopular1() {
     console.log("[Aero Client] Launching Stable Branch");
     client.launch({ 
       authorization: Authenticator.getAuth("User"),
-      clientPackage: "https://clientupdate.aeroclient.net",
+      clientPackage: "",
       removePackage: "clientPackage.zip",
       root: getAppDataPath(".minecraft"),
       javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
@@ -263,12 +261,12 @@ async function onlinePopular1() {
     console.log("[Aero Client] Launching Stable Branch");
     client.launch({ 
       authorization: Authenticator.getAuth("User"),
-      clientPackage: "https://clientupdate.aeroclient.net",
+      clientPackage: "",
       removePackage: "clientPackage.zip",
       root: getAppDataPath(".minecraft"),
       javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
       server: {
-        host: "play.coldnetwork.net",
+        host: "Aeroclient.tk",
         port: "25565"
       },
       version: {
@@ -312,7 +310,7 @@ async function onlinePopular1() {
           min: "1024"
       },
       overrides: {
-        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
+        minecraftJar: getAppDataPath(".minecraft/versions/ValixClient/ValixClient.patch"),
       }
   }).catch(e => {
       console.log(e.message);
@@ -342,7 +340,7 @@ async function onlinePopular1() {
           min: "1024"
       },
       overrides: {
-        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
+        minecraftJar: getAppDataPath(".minecraft/versions/ValixClient/ValixClient.patch"),
       }
   }).catch(e => {
       console.log(e.message);
@@ -360,7 +358,7 @@ async function onlinePopular1() {
       root: getAppDataPath(".minecraft"),
       javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
       server: {
-        host: "play.coldnetwork.net",
+        host: "Aeroclient.tk",
         port: "25565"
       },
       version: {
@@ -372,7 +370,7 @@ async function onlinePopular1() {
           min: "1024"
       },
       overrides: {
-        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
+        minecraftJar: getAppDataPath(".minecraft/versions/ValixClient/ValixClient.patch"),
       }
   }).catch(e => {
       console.log(e.message);
@@ -402,7 +400,7 @@ async function onlinePopular1() {
           min: "1024"
       },
       overrides: {
-        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
+        minecraftJar: getAppDataPath(".minecraft/versions/ValixClient/ValixClient.patch"),
       }
   }).catch(e => {
       console.log(e.message);
