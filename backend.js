@@ -162,8 +162,8 @@ async function launchOffline2() {
   }
 
 function quickConnectMain0() {
-    alert("This server requires 1.8.9, which Aero Client does not currently support.");
-    showLauncher();
+     if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.8.9/AeroClient-1.8.9.patch')))) { // If the client doesn't exist it will download the client.
+    onlinePopular0();
 }
 
 function quickConnectMain1() { 
@@ -221,6 +221,38 @@ function quickMain3() {
     }
 
 }
+    
+    async function onlinePopular0() {
+    document.getElementById('launchButton').innerHTML = "Updating Patch"
+    document.querySelector('.launch-button').className += " clicked";
+  
+    console.log("[Aero Client] Launching Stable Branch");
+    client.launch({ 
+      authorization: Authenticator.getAuth("User"),
+      clientPackage: "",
+      removePackage: "clientPackage.zip",
+      root: getAppDataPath(".minecraft"),
+      javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
+      server: {
+        host: "play.vipermc.net",
+        port: "25565"
+      },
+      version: {
+        number: "1.7.10",
+        custom: "AeroClient-1.7.10"
+      },
+      memory: {
+          max: document.getElementById("ramslider").value,
+          min: "1024"
+      },
+      overrides: {
+        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
+      }
+  }).catch(e => {
+      console.log(e.message);
+      launchError();
+  })
+  }
 
 async function onlinePopular1() {
     document.getElementById('launchButton').innerHTML = "Updating Patch"
