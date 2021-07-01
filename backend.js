@@ -25,7 +25,7 @@ function banUser() {
 function startupChecksMain() {
  var branch2 = document.querySelector('.branch-button2').innerHTML
  
-  if(branch2 == "✔️1.7.10 (Default)") {
+  if(branch2 == "✔️Stable (Default)") {
     checkfirstPatch();
   }
     }
