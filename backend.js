@@ -24,12 +24,15 @@ function banUser() {
   
 function startupChecksMain() {
  var branch2 = document.querySelector('.branch-button2').innerHTML
+ 
+  if(branch2 == "✔️1.7.10 (Default)") {
+    checkfirstPatch();
+  }
+    }
 
  if(branch2 == "✔️Beta") {
     checkSecondPatch();
-  } else {
-      launchClient1(); // If the SHA1 Hash is different then it will download the client.
-    }
+  }
 }
 
 function checkPatch() { // This Method fixes the client from downloading itself everytime.
