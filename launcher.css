@@ -1,9 +1,9 @@
 .blog-author-skin {
-    background-image: url('https://minotar.net/helm/Swxtq/32.png'); 
+    background-image: url('https://minotar.net/helm/Cybn/32.png'); 
 }
 
 .author-name::after {
-   content: "MagmaPyro";
+   content: "Cybn";
    color: #ff0000;
 }
 
@@ -14,7 +14,7 @@
 .blogcontent::after {
    white-space: pre-wrap;
    font-weight: bold;
-   content: "Welcome to Beta Release. this is the first ever beta release. we all hope you enjoy it. and beta 2 will be coming shortly. with the website in a few days.";
+   content: "Welcome to Beta Release. this is a update for beta release, Launcher Updates. added support for christmas, added a better headerimg.";
 }
 
 .about-responsemain::after {
