@@ -269,7 +269,7 @@ async function onlinePopular1() {
       root: getAppDataPath(".minecraft"),
       javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
       server: {
-        host: "play.vipermc.net",
+        host: "Cavepvp.org",
         port: "25565"
       },
       version: {
