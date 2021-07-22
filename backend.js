@@ -105,7 +105,7 @@ async function launchClient2() {
      console.log("[Aero Client] Launching Stable Branch");
      client.launch({ 
        authorization: Authenticator.getAuth("User"),
-       clientPackage: "https://github.com/Aero-Client/StableBranch/releases/download/1.0/AeroClient-1.8.9.zip",
+       clientPackage: "",
        removePackage: "clientPackage.zip",
        root: getAppDataPath(".minecraft"),
        javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
