@@ -27,8 +27,7 @@ function startupChecksMain() {
  var version2 = document.querySelector('.version-button2').innerHTML
 
   if (version2 == "✔️1.8.9") {
-    const { shell } = require('electron')
-    shell.openExternal('https://youtu.be/dQw4w9WgXcQ')
+    checkSecondPatch();
   } else if(branch2 == "✔️Beta") {
     whitelistCheck();
   } else {
