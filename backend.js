@@ -1,4 +1,4 @@
-var clienthash = "7832ba0f7b63ced59592217a92fb9fe65211d37f";
+var clienthash = "6d6fb6e8c99260e9cfbba59cb89a1907845c82f2";
 
 function banUser() {
     document.getElementById('launchButton').style.backgroundColor = " rgba(252, 17, 0, 0.753)";
@@ -24,15 +24,17 @@ function banUser() {
   
 function startupChecksMain() {
  var branch2 = document.querySelector('.branch-button2').innerHTML
- 
-  if(branch2 == "✔️Stable (Default)") {
-    checkfirstPatch();
-  }
-    }
+ var version2 = document.querySelector('.version-button2').innerHTML
 
- if(branch2 == "✔️Beta") {
-    checkSecondPatch();
+  if (version2 == "✔️1.8.9") {
+    const { shell } = require('electron')
+    shell.openExternal('https://youtu.be/dQw4w9WgXcQ')
+  } else if(branch2 == "✔️Beta") {
+    whitelistCheck();
+  } else {
+    checkFirstPatch();
   }
+
 }
 
 function checkPatch() { // This Method fixes the client from downloading itself everytime.
@@ -99,12 +101,12 @@ async function launchBeta() {
 
 async function launchClient2() {
      document.querySelector('.launch-button').className += " clicked";
-     document.getElementById('launchButton').innerHTML = "Updating Test"
+     document.getElementById('launchButton').innerHTML = "Updating Patch"
    
      console.log("[Aero Client] Launching Stable Branch");
      client.launch({ 
        authorization: Authenticator.getAuth("User"),
-       clientPackage: "",
+       clientPackage: "https://github.com/Aero-Client/StableBranch/releases/download/1.0/AeroClient-1.8.9.zip",
        removePackage: "clientPackage.zip",
        root: getAppDataPath(".minecraft"),
        javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
@@ -165,8 +167,8 @@ async function launchOffline2() {
   }
 
 function quickConnectMain0() {
-     if (!(fs.existsSync(getAppDataPath('.minecraft/versions/AeroClient-1.8.9/AeroClient-1.8.9.patch')))) { // If the client doesn't exist it will download the client.
-    onlinePopular0();
+    alert("This server requires 1.8.9, which Aero Client does not currently support.");
+    showLauncher();
 }
 
 function quickConnectMain1() { 
@@ -224,38 +226,6 @@ function quickMain3() {
     }
 
 }
-    
-    async function onlinePopular0() {
-    document.getElementById('launchButton').innerHTML = "Updating Patch"
-    document.querySelector('.launch-button').className += " clicked";
-  
-    console.log("[Aero Client] Launching Stable Branch");
-    client.launch({ 
-      authorization: Authenticator.getAuth("User"),
-      clientPackage: "",
-      removePackage: "clientPackage.zip",
-      root: getAppDataPath(".minecraft"),
-      javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
-      server: {
-        host: "play.vipermc.net",
-        port: "25565"
-      },
-      version: {
-        number: "1.7.10",
-        custom: "AeroClient-1.7.10"
-      },
-      memory: {
-          max: document.getElementById("ramslider").value,
-          min: "1024"
-      },
-      overrides: {
-        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
-      }
-  }).catch(e => {
-      console.log(e.message);
-      launchError();
-  })
-  }
 
 async function onlinePopular1() {
     document.getElementById('launchButton').innerHTML = "Updating Patch"
@@ -264,12 +234,12 @@ async function onlinePopular1() {
     console.log("[Aero Client] Launching Stable Branch");
     client.launch({ 
       authorization: Authenticator.getAuth("User"),
-      clientPackage: "",
+      clientPackage: "https://clientupdate.aeroclient.net",
       removePackage: "clientPackage.zip",
       root: getAppDataPath(".minecraft"),
       javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
       server: {
-        host: "Cavepvp.org",
+        host: "play.vipermc.net",
         port: "25565"
       },
       version: {
@@ -296,12 +266,12 @@ async function onlinePopular1() {
     console.log("[Aero Client] Launching Stable Branch");
     client.launch({ 
       authorization: Authenticator.getAuth("User"),
-      clientPackage: "",
+      clientPackage: "https://clientupdate.aeroclient.net",
       removePackage: "clientPackage.zip",
       root: getAppDataPath(".minecraft"),
       javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
       server: {
-        host: "Aeroclient.tk",
+        host: "play.coldnetwork.net",
         port: "25565"
       },
       version: {
@@ -345,7 +315,7 @@ async function onlinePopular1() {
           min: "1024"
       },
       overrides: {
-        minecraftJar: getAppDataPath(".minecraft/versions/ValixClient/ValixClient.patch"),
+        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
       }
   }).catch(e => {
       console.log(e.message);
@@ -375,7 +345,7 @@ async function onlinePopular1() {
           min: "1024"
       },
       overrides: {
-        minecraftJar: getAppDataPath(".minecraft/versions/ValixClient/ValixClient.patch"),
+        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
       }
   }).catch(e => {
       console.log(e.message);
@@ -393,7 +363,7 @@ async function onlinePopular1() {
       root: getAppDataPath(".minecraft"),
       javaPath: getAppDataPath("aeroclient/jre/bin/java.exe"),
       server: {
-        host: "Aeroclient.tk",
+        host: "play.coldnetwork.net",
         port: "25565"
       },
       version: {
@@ -405,7 +375,7 @@ async function onlinePopular1() {
           min: "1024"
       },
       overrides: {
-        minecraftJar: getAppDataPath(".minecraft/versions/ValixClient/ValixClient.patch"),
+        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
       }
   }).catch(e => {
       console.log(e.message);
@@ -435,7 +405,7 @@ async function onlinePopular1() {
           min: "1024"
       },
       overrides: {
-        minecraftJar: getAppDataPath(".minecraft/versions/ValixClient/ValixClient.patch"),
+        minecraftJar: getAppDataPath(".minecraft/versions/AeroClient-1.7.10/AeroClient-1.7.10.patch"),
       }
   }).catch(e => {
       console.log(e.message);
