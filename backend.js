@@ -32,7 +32,10 @@ function startupChecksMain() {
     whitelistCheck();
   } else {
     checkFirstPatch();
-  }
+  } 
+    else if(version3 == "️✔️1.16") {
+    alert("Aero Client 1.16 is not released, we will announce when it is though!");
+    showLauncher();
 
 }
 
