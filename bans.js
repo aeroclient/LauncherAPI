@@ -3,7 +3,7 @@ function bannedCheck() {
     if (err) throw err;
     if(data.indexOf('3b28881a6362435a9d686f1cb7494c13') >= 1) {
      banUser()
-    } else if(data.indexOf('fa70437f798349c6997f191a52afd6d7') >= 1) {
+    } else if(data.indexOf('83c98721-6c66-438e-bf3c-2e1d0dd6d469') >= 1) {
       banUser()
     } else if(data.indexOf('f9253756dc8744ed81f8f03811ab89b4') >= 1) {
       banUser()
