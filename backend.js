@@ -72,7 +72,7 @@ function checkSecondPatch() {
 
 async function launchBeta() {
      document.querySelector('.launch-button').className += " clicked";
-     document.getElementById('launchButton').innerHTML = "Updating Patch"
+     document.getElementById('launchButton').innerHTML = "Updating Client"
    
      console.log("[Aero Client] Launching Stable Branch");
      client.launch({ 
