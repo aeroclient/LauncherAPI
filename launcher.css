@@ -1,0 +1,22 @@
+.blog-author-skin {
+    background-image: url('https://minotar.net/helm/iuseVapeV3/32.png'); 
+}
+
+.blogauthor::after {
+   content: "iuseVapeV3";
+   color: #ff0000;
+}
+
+.blogtitle::after {
+   content: "Beta Production";
+}
+
+.blogcontent::after {
+   white-space: pre-wrap;
+   font-weight: bold;
+   content: "Welcome to Beta Release. this is a new update for beta Release \a \a Launcher Updates: \a \a Added Support for Christmas, \a \a Added a better headerimg,";
+}
+
+.aboutus::after {
+   content: "Aero Client is a reskinned version of CheatBreaker and Lunar Client 1.8.9 that had more than just images and text changed. we offer cosmetics. a launcher for our users to use. and an anticheat!";
+}
