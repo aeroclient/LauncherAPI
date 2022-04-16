@@ -4,7 +4,7 @@
 
 .blogauthor::after {
    content: "iuseVapeV3";
-   color: #ff0000;
+   color: gray;
 }
 
 .blogtitle::after {
